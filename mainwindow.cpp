@@ -13,7 +13,7 @@ MainWindow::MainWindow(QWidget *parent)
     connect(socket, &QTcpSocket::readyRead, this, &MainWindow::slotReadyRead);
     connect(socket, &QTcpSocket::disconnected, socket, &QTcpSocket::deleteLater);
 //    ui->pushButton->setEnabled(false);
-
+//    qDebug()
 }
 
 MainWindow::~MainWindow()
